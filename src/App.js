@@ -1,5 +1,5 @@
 import './App.css';
-import QrCode from './Components/QrCode';
+import Login from './Components/Login';
 import {
   BrowserRouter as Router,
   Routes,
@@ -12,9 +12,10 @@ function App() {
       <Router>
         {/* <Navbar title="Home" information="Information" /> */}
         <Routes>
-          <Route exact path="/" element={<QrCode/>} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </Router>
+      <Login />
     </div>
   );
 }
